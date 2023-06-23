@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nome
+		inteiro area 
+		
+		escreva("Olá, poderia me informar seu nome?" , "\n")
+		leia(nome)
+
+		escreva( nome , ", poderia me informar o tamanho em metros quadrados do espaço que deseja pintar?" , "\n")
+		leia(area)
+
+		inteiro latas_tinta
+		latas_tinta = (area/3)/18
+
+		escreva( nome , " a quantidade de latas de tinta necessária para pintar  esse espaço"  , " será " , latas_tinta)
+		escreva(" e o preço ficará em " , latas_tinta*480)
+	}
+}
