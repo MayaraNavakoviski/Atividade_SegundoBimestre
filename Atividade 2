@@ -1,0 +1,45 @@
+programa
+{
+	inclua biblioteca Matematica
+	
+	funcao inicio()
+	{
+		real A
+		real B
+		real C
+		
+		escreva("Me informe um valor para A: " , "\n")
+		leia(A)
+
+		escreva("Me informe um valor para B: " , "\n")
+		leia(B)
+
+		escreva("Me informe um valor para C: " , "\n")
+		leia(C)
+
+		real DELTA
+		DELTA =(B*B)-4*A*C
+
+		escreva("Com os valores informados podemos fazer a fómula de Bhaskara." , "\n")
+		escreva("O DELTA será igual á " , DELTA , "\n")
+		
+		se(DELTA < 0){
+			escreva("Infelizmente não será possível terminar esta equacão, pois DELTA é negativo" , "\n")
+		}
+		se(DELTA == 0){
+			escreva("Infelizmente não será possível terminar esta equacão, pois DELTA é 0" , "\n")
+		}
+
+		real X
+		X = ((-B)-Matematica.raiz(DELTA , 2))/2*A
+
+		escreva("O valor do primeiro X será " , X , "\n")
+
+		real x
+		x = ((-B)+Matematica.raiz(DELTA , 2))/2*A
+
+		escreva("O valor do segundo X será " , x)
+	}
+}
+
+
