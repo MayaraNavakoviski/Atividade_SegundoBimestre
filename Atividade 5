@@ -1,0 +1,59 @@
+programa
+{
+	inclua biblioteca Matematica
+	
+	funcao inicio()
+	{
+		logico exprecao
+		
+		se( 2 * 4 == 24/3 ){
+			exprecao = verdadeiro
+			 escreva("a. (V)  2 * 4 == 24/3" , "\n" )
+		} senao {
+			exprecao = falso
+			 escreva("a. (F)  2 * 4 == 24/3" , "\n" )
+		}
+
+		se((15 % 4) < (19 % 6) ) {
+			exprecao = verdadeiro
+			escreva("b. (V) (15 % 4) < (19 % 6)" )
+		} senao{
+			exprecao = falso
+			escreva("b. (F) (15 % 4) < (19 % 6) " , "\n")  
+		}
+
+          se( nao(2 < 5) != (8 == 8) ){
+          	exprecao = verdadeiro
+          	escreva("c. (V) nao(2 < 5) != (8 == 8) " , "\n")
+          } senao{
+          	exprecao = falso
+          	escreva("c. ( F) nao(2 < 5) != (8 == 8)" , "\n")
+          }
+
+          se( 2*2 == Matematica.potencia(2, 2) ){
+          	exprecao = verdadeiro
+          	 escreva("e. (V) 2*2 == Matematica.potencia(2, 2)" , "\n")
+          } senao{
+          	exprecao = falso
+          	 escreva("e. (F) 2*2 == Matematica.potencia(2, 2)" , "\n" )
+          }
+          
+          se( verdadeiro e  (7 / 2) > 3.5 ) {
+          	exprecao = verdadeiro
+          escreva("f. (V) verdadeiro e ( (7 / 2) > 3.5 )" , "\n" )
+          } senao{
+          	exprecao = falso
+          	escreva("f. (F) verdadeiro e ( (7 / 2) > 3.5 )"  , "\n")
+          }
+         
+          se( (Matematica.arredondar( 2.8, 0 ) == 3) e (Matematica.raiz(9 , 0) == 3) ){
+          	exprecao = verdadeiro
+          	
+          escreva("g. (V) (Mat.arredondar( 2.8, 0 ) == 3) e (Mat.raiz(9) == 3)" , "\n" )
+          
+          } senao{
+          	exprecao = falso
+          	  escreva("g. (F) (Mat.arredondar( 2.8, 0 ) == 3) e (Mat.raiz(9) == 3)" , "\n" )
+          }
+	}
+}
