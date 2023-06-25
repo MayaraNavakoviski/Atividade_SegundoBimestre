@@ -1,0 +1,26 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		
+		cadeia nome
+		inteiro idade
+		
+		escreva("Me informe seu nome: " , "\n")
+		leia(nome)
+
+		escreva(nome , ", me informe sua idade" , "\n")
+		leia(idade)
+
+		inteiro dias = idade*365
+		inteiro horas = dias*24
+		inteiro minutos = horas*60
+		inteiro segundos = minutos*60
+		inteiro segundos_total = segundos*60
+		
+         escreva(nome , ", você está presente neste mundo á " ,  dias , " dias, " , horas ,  " horas, " , minutos , " minutos e " , segundos , " segundo")
+
+         escreva(", tudo isso no total dará " , segundos_total , " segundos.")
+	}
+}
