@@ -1,0 +1,26 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nome
+		inteiro dias
+		real km
+		
+		
+		escreva("Me informe seu nome " , "\n")
+		leia(nome)
+		
+		escreva(nome , ", me informe a quanto tempo está com o carro" , "\n")
+		leia(dias)
+		
+		escreva(" e  quantos quilômetros você percorreu com ele" , "\n")
+		leia(km)
+
+		inteiro custo = dias*60
+		inteiro taxa = km*0.15
+
+		escreva(nome , ", como o carro custa 60 reais por dia, você terá que pagar " , custo , " reais, junto a taxa por km rodado, que deu  " , taxa , " reais")
+		escreva(", o que no total será de " , custo+taxa , ".")
+	}
+}
