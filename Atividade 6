@@ -1,0 +1,26 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro X
+		inteiro Y
+		
+		escreva("Me informe um valor para X: " , "\n")
+		leia(X)
+
+		escreva("Me informe um valor para Y: " , "\n")
+		leia(Y)
+
+		 se(X > Y){
+		 	escreva( X , " é o maior número que me foi informado." , "\n")
+		 }
+		 se(X < Y){
+	 	      escreva(Y , " é maior número que me foi informmado." , "\n")
+		 }
+
+		 se(X == Y){
+		 	escreva( " Os dois números que me foi informado são iguais.")
+		 }
+	}
+}
