@@ -1,0 +1,30 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real temperatura
+		
+		escreva("Me informe  a  temperatura de hoje:  " , "\n")
+		leia(temperatura)
+		
+		
+se(temperatura <= 0){
+			escreva("A temperatura está negativa, " , "\n")
+			escreva(" hoje está muito, muito, muito frio" , "\n")
+		}
+		senao{
+			escreva("A temperatura está positiva, porém ")
+
+			se(temperatura >= 20){
+				escreva("hoje está quente." , "\n")
+			}
+			se(temperatura <=20 e temperatura >=10 ){
+				escreva(" hoje está levemente frio." , "\n")
+			}
+			se(temperatura < 10 e temperatura >= 1){
+				escreva("hoje está muito frio.")
+			}
+		}
+	}
+}
