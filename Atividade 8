@@ -1,0 +1,101 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nome
+		logico coriza 
+		logico tosse
+		logico febre
+		logico dor_garganta
+		logico dif_respirar
+		
+		
+		escreva("Me informe seu nome: " , "\n")
+		leia(nome)
+
+		escreva(nome , ", irei perguntar sobre alguns sintomas, por favor responda com apenAs verdadeiro ou falso." , "\n")
+		
+		escreva("Teve algum ataque de tosse recentemente?" , "\n")
+		leia(tosse)
+
+		escreva("Alguma dor de garganta irritante?" , "\n")
+		leia(dor_garganta)
+
+		escreva("E a febre?" , "\n")
+		leia(febre)
+
+		escreva("Alguma coceira na região nazal?" , "\n")
+		leia(coriza)
+
+		escreva("E finalmente, teve alguma dificuldade de respira?" , "\n")
+		leia(dif_respirar)
+
+		se(tosse e dor_garganta == verdadeiro){
+			escreva(nome , ", encaminharei você para fazer alguns exames, com COVID incluido.")
+		}
+
+		se(tosse e febre == verdadeiro){
+			escreva(nome , ", encaminharei você para fazer alguns exames, com COVID incluido.")
+		}
+
+		se(tosse e coriza == verdadeiro){
+			escreva(nome , ", encaminharei você para fazer alguns exames, com COVID incluido.")
+		}
+
+		se(tosse e dif_respirar == verdadeiro){
+			escreva(nome , ", encaminharei você para fazer alguns exames com urgência, com COVID incluido.")
+		}
+
+		se(dor_garganta e febre == verdadeiro){
+			escreva(nome , ", encaminharei você para fazer alguns exames, com COVID incluido.")
+		}
+
+		se(dor_garganta e coriza == verdadeiro){
+			escreva(nome , ", encaminharei você para fazer alguns exames, com COVID incluido.")
+		}
+
+		se(dor_garganta e dif_respirar == verdadeiro){
+			escreva(nome , ", encaminharei você para fazer alguns exames com urgência, com COVID incluido.")
+		}
+
+		se(febre e coriza == verdadeiro ){
+			escreva(nome , ", encaminharei você para fazer alguns exames, com COVID incluido.")
+		}
+
+		se(febre e dif_respirar == verdadeiro ){
+			escreva(nome , ", encaminharei você para fazer alguns exames com urgência, com COVID incluido.")
+		}
+
+		se(coriza e dif_respirar == verdadeiro ){
+			escreva(nome , ", encaminharei você para fazer alguns exames com urgência, com COVID incluido.")
+		}
+		se(dif_respirar  == verdadeiro){
+		escreva(nome , ", encaminharei você para fazer alguns exames, com o COVID incluido.")
+		}
+
+		se(tosse == verdadeiro){
+			escreva("Parece tudo normal, porém se quiser podemos te encaminhar para alguns exames. ")
+		}
+
+		
+		se(coriza == verdadeiro){
+			escreva("Parece tudo normal, porém se quiser podemos te encaminhar para alguns exames. ")
+		}
+
+		
+		se(febre == verdadeiro){
+			escreva("Parece tudo normal, porém se quiser podemos te encaminhar para alguns exames. ")
+		}
+
+		
+		se(dor_garganta == verdadeiro){
+			escreva("Parece tudo normal, porém se quiser podemos te encaminhar para alguns exames. ")
+		}
+
+		
+		se(dif_respirar == verdadeiro){
+			escreva("Parece tudo normal, porém se quiser podemos te encaminhar para alguns exames. ")
+		}
+	}
+}
