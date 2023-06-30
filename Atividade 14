@@ -1,0 +1,34 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nome
+		inteiro A
+		inteiro B
+		
+		escreva("Me informe seu nome " , "\n")
+		leia(nome)
+		
+		escreva(nome , ", me informe sua nota final do primeiro trimestre" , "/n")
+		leia(A)
+		
+		escreva(" e a nota final do segundo trimestre." , "\n")
+		leia(B)
+
+		inteiro nota = (A+B)/2
+
+		se(nota < 70){
+			escreva("Infelizmente, você foi reprovado." , "\n")
+		}
+		se(nota == 100){
+			escreva("Parabéns, você foi aprovado com distinção." , "\n")
+		}
+		se(nota > 70 e nota < 90){
+			escreva("Parabéns, você foi aprovado." , "\n")
+		}
+		se(nota >= 90 e nota < 99){
+			escreva("Parabéns, você foi aprovado com êxito.")
+		}
+	}
+}
