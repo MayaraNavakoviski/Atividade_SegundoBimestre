@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real km
+		
+		escreva("Me informe a velocidade em que você estava" , "\n")
+		leia(km)
+
+
+		se(km > 80){
+
+			real multa = (km - 80)*7.00
+			
+			escreva("Você estava acima do limite de velocidade, terá que pagar uma multa de " , multa , " reais.")
+		} senao{
+			escreva("Você está liberado.")
+		}
+	}
+}
