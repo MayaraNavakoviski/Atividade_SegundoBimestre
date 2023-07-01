@@ -1,0 +1,66 @@
+funcao inicio()
+	{
+		inteiro A
+		inteiro B
+		inteiro C
+		
+		escreva("Me informe um número." , "\n")
+		leia(A)
+		
+		escreva("Me informe outro número." , "\n")
+		leia(B)
+		
+		escreva("Me informe mais um número." , "\n")
+		leia(C)
+
+		escreva("A ordem decrescente destes números é3: " , "\n")
+
+		se(A < B e A < C){
+			escreva(A , "\n")
+		}
+
+		se(B < A e B < C){
+			escreva(B, "\n")
+		}
+
+		se(C < B e C < B){
+			escreva(C , "\n")
+		}
+
+		se(A < B e A > C){
+			escreva(A , "\n")
+		}
+		se (A > B e A < C){
+			escreva(A , "\n")
+		}
+
+		se(B < A e B > C ){
+			escreva(B , "\n")
+			
+		}
+
+		se(B > A e B < C){
+			escreva(C , "\n")
+		}
+
+		se(C < A e C > B){
+			escreva(C , "\n")
+		}
+
+		se(C > A e C < B){
+			escreva(C , "\n")
+		}
+
+		se(A > B e A > C){
+			escreva(A , "\n")
+			
+		}
+		se (B > C e B > A){
+			escreva(B , "\n")
+		}
+		se (C > A e C > B){
+			escreva(C , "\n")
+		}
+	}
+	
+}
